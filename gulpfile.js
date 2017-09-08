@@ -17,7 +17,7 @@ gulp.task('lint', () => {
 
 gulp.task('test', () => {
   return gulp.src(['**/*.test.js', '!node_modules/**', '!coverage/**'])
-    .pipe(mocha({reporter: 'spec', timeout: 5000}))
+    .pipe(mocha({reporter: 'spec', timeout: 10000}))
     .once('error', () => {
       process.exit(1);
     });

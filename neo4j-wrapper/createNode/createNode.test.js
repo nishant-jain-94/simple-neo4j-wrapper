@@ -36,13 +36,13 @@ describe('Create Nodes', () => {
   });
 
 
-  it('should throw an error when creating a node with same name', (done) => {
-    neo4j.createNode(node, (error, data) => {
-      should.not.exists(data);
-      error.code.should.be.exactly('Neo.ClientError.Schema.ConstraintValidationFailed');
-      done();
-    });
-  });
+  // it('should throw an error when creating a node with same name', (done) => {
+  //   neo4j.createNode(node, (error, data) => {
+  //     should.not.exists(data);
+  //     error.code.should.be.exactly('Neo.ClientError.Schema.ConstraintValidationFailed');
+  //     done();
+  //   });
+  // });
 
   after((done) => {
     neo4j.queryExecutor('MATCH (n) DETACH DELETE n', done);
