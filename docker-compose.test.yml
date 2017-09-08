@@ -1,0 +1,21 @@
+version: '2'
+services:
+  graphdb:
+    image: neo4j:latest
+    environment:
+      - NEO4J_AUTH=neo4j/password
+      - NEO4J_CACHE_MEMORY=1G
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_dbms_memory_pagecache_size=4G
+    volumes:
+      - ./db/dbms:/data/dbms
+      - ./plugins:/plugins
+      - ./logs/graphdb:/logs
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    ulimits:
+      nofile:
+        soft: 65535
+        hard: 65535
+    restart: always
