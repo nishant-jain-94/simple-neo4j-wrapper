@@ -9,7 +9,6 @@ services:
       - NEO4J_dbms_memory_pagecache_size=4G
     volumes:
       - ./db/dbms:/data/dbms
-      - ./plugins:/plugins
       - ./logs/graphdb:/logs
     ports:
       - "7474:7474"
