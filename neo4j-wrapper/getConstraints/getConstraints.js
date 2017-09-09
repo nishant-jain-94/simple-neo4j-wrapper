@@ -8,13 +8,14 @@ const getConstraints = function getConstraints(callback) {
     url: 'http://127.0.0.1:7474/db/data/schema/constraint',
     headers: {
       'Authorization': `Basic ${base64EncodedCredentials}`,
+      'Connection': 'keep-alive',
     },
     timeout: 5000,
   };
 
   axios.request(options)
     .then((response) => callback(null, response.body))
-    .catch((error) => {console.log(error); callback(error, null);});
+    .catch((error) => { console.log(error); callback(error, null); });
 };
 
 module.exports = getConstraints;
