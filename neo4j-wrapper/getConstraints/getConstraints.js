@@ -1,4 +1,4 @@
-const request = require('request');
+const axios = require('axios');
 const log = require('../commons/logger')('Get Constraints');
 
 const getConstraints = function getConstraints(callback) {
@@ -10,12 +10,10 @@ const getConstraints = function getConstraints(callback) {
       'Authorization': `Basic ${base64EncodedCredentials}`,
     },
   };
-  request(options, (error, response) => {
-    log.debug(options);
-    log.error(error);
-    log.debug(response);
-    callback(error, JSON.parse(response.body));
-  });
+
+  axios.request(options)
+    .then((response) => callback(null, response.body))
+    .catch((error) => callback(error, null));
 };
 
 module.exports = getConstraints;
