@@ -9,6 +9,7 @@ const getConstraints = function getConstraints(callback) {
     headers: {
       'Authorization': `Basic ${base64EncodedCredentials}`,
     },
+    timeout: 5000,
   };
 
   axios.request(options)
