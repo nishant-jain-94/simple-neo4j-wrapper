@@ -14,7 +14,7 @@ const getConstraints = function getConstraints(callback) {
 
   axios.request(options)
     .then((response) => callback(null, response.body))
-    .catch((error) => callback(error, null));
+    .catch((error) => {console.log(error); callback(error, null);});
 };
 
 module.exports = getConstraints;
