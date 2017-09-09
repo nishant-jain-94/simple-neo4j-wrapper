@@ -9,6 +9,7 @@ before_script:
   - docker-compose -f docker-compose.test.yml up --build -d
   - git clone https://github.com/vishnubob/wait-for-it.git
   - ./wait-for-it/wait-for-it.sh localhost:7474 --strict  -- echo "Neo4j is up"
+  - ./wait-for-it/wait-for-it.sh localhost:7687
   - docker-compose -f docker-compose.test.yml logs
 install:
   - yarn install
