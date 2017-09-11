@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Nishant Jain",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nishant-jain-94/simple-neo4j-wrapper"
+  },
   "scripts": {
     "lint": "gulp lint",
     "test": "gulp test",
