@@ -5,7 +5,7 @@
  * @param {Function} callback 
  */
 const queryExecutorWithParams = function queryExecutorWithParams(query, params, callback) {
-  return session
+  return this.session
     .run(query, params)
     .then((result) => { return callback(null, result); })
     .catch((error) => { log.error(error); return callback(error, null); });
