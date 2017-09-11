@@ -1,5 +1,10 @@
 const _ = require('lodash');
 
+/**
+ * Create Relations. 
+ * @param {Object} properties - Refers to the properties of the relationship.
+ * @param {Function} callback 
+ */
 const createRelation = function createRelation(properties, callback) {
   const propertiesOfRelation = _.omit(properties, ['nameOfSourceNode', 'labelOfSourceNode', 'relation', 'nameOfTargetNode', 'labelOfTargetNode']);
   const propertiesOfRelationStringified = JSON

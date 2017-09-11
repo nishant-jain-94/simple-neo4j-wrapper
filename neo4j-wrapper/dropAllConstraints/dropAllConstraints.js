@@ -1,5 +1,9 @@
 const async = require('async');
 
+/**
+ * Deletes all the constraints in Neo4j.
+ * @param {Function} callback 
+ */
 const dropAllConstraints = function dropAllConstraints(callback) {
   const dropConstraints = (constraints, cb) => {
     const queryExecutorToDropConstraints = async.map(constraints, ({property_keys, label}) => {

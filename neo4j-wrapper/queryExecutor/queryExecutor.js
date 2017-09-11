@@ -1,5 +1,10 @@
 const log = require('../commons/logger')('Query Executor');
 
+/**
+ * Executes a Cypher Query.
+ * @param {String} query 
+ * @param {Function} callback 
+ */
 const queryExecutor = function queryExecutor(query, callback) {
   if(typeof query !== 'string') {
     throw new Error('Expected query to be of type string');

@@ -1,6 +1,10 @@
-
+/**
+ * Executes a Cypher Query with parameters.
+ * @param {String} query 
+ * @param {Object} params - Refers to the parameters of Cypher Query.
+ * @param {Function} callback 
+ */
 const queryExecutorWithParams = function queryExecutorWithParams(query, params, callback) {
-  log.debug(query);
   return session
     .run(query, params)
     .then((result) => { return callback(null, result); })
