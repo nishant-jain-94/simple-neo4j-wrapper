@@ -1,5 +1,5 @@
 {
-  "name": "query_processors",
+  "name": "simple-neo4j-wrapper",
   "version": "1.0.0",
   "description": "Query Processors to execute different queries on Neo4j",
   "main": "index.js",
