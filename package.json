@@ -1,6 +1,6 @@
 {
   "name": "simple-neo4j-wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Query Processors to execute different queries on Neo4j",
   "main": "index.js",
   "author": "Nishant Jain",
