@@ -76,5 +76,6 @@ Neo4jWrapper.prototype.queryExecutor = require('./queryExecutor');
 Neo4jWrapper.prototype.bulkMergeOrCreateNode = require('./bulkMergeOrCreateNode');
 Neo4jWrapper.prototype.bulkMergeOrCreateRelation = require('./bulkMergeOrCreateRelation');
 Neo4jWrapper.prototype.bulkQueryExecutor = require('./bulkQueryExecutor');
+Neo4jWrapper.prototype.queryExecutorWithParams = require('./queryExecutorWithParams');
 
 module.exports = Neo4jWrapper;
