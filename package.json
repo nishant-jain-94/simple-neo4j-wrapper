@@ -1,0 +1,34 @@
+{
+  "name": "query_processors",
+  "version": "1.0.0",
+  "description": "Query Processors to execute different queries on Neo4j",
+  "main": "index.js",
+  "author": "Nishant Jain",
+  "license": "MIT",
+  "scripts": {
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "axios": "^0.16.2",
+    "fast-csv": "^2.4.0",
+    "highland": "^2.11.0",
+    "neo4j-driver": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "bunyan": "^1.8.12",
+    "bunyan-format": "^0.2.1",
+    "coveralls": "^2.13.1",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-lite": "^1.0.4",
+    "eslint-html-reporter": "^0.5.2",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-mocha": "^4.3.1",
+    "mocha": "^3.4.2",
+    "should": "^11.2.1"
+  }
+}

@@ -1,0 +1,21 @@
+const axios = require('axios');
+const log = require('../commons/logger')('Get Constraints');
+
+const getConstraints = function getConstraints(callback) {
+  const base64EncodedCredentials = new Buffer(`${this.username}:${this.password}`).toString('base64');
+  log.debug(base64EncodedCredentials);
+  const options = {
+    url: 'http://127.0.0.1:7474/db/data/schema/constraint',
+    headers: {
+      'Authorization': `Basic ${base64EncodedCredentials}`,
+      'Connection': 'keep-alive',
+    },
+    timeout: 5000,
+  };
+
+  axios.request(options)
+    .then((response) => callback(null, response.body))
+    .catch((error) => { console.log(error); callback(error, null); });
+};
+
+module.exports = getConstraints;
