@@ -8,7 +8,7 @@ const queryExecutorWithParams = function queryExecutorWithParams(query, params, 
   return this.session
     .run(query, params)
     .then((result) => { return callback(null, result); })
-    .catch((error) => { log.error(error); return callback(error, null); });
+    .catch((error) => { console.error(error); return callback(error, null); });
 };
 
 module.exports = queryExecutorWithParams;
