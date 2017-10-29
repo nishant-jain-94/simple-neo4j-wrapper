@@ -251,13 +251,13 @@
                 </tr>
                 <tr>
                   <td>Warnings</td>
-                  <td>0</td>
+                  <td>3</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
                   <td>Total alerts</td>
-                  <td>0</td>
+                  <td>3</td>
                 </tr>
               </tfoot>
           </table>
@@ -271,23 +271,44 @@
                 </tr>
                 <tr>
                   <td>Files with only warnings</td>
-                  <td>0</td>
+                  <td>3</td>
                 </tr>
                 <tr>
                   <td>Clean files</td>
-                  <td>68</td>
+                  <td>63</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
                   <td>Total files linted</td>
-                  <td>68</td>
+                  <td>66</td>
                 </tr>
               </tfoot>
           </table>
         </div>
       </div>
 
+        <h2>Most-Common Errors and Warnings</h2>
+        
+        <div class="table-wrapper occurances">
+          <div class="table-column">
+            <h3>Errors</h3>
+        
+              <p>No errors were found!</p>
+          </div>
+          <div class="table-column">
+            <h3>Warnings</h3>
+        
+              <table class="summary-table">
+                <tbody>
+                    <tr class="occurance row-0">
+                        <td><a href="http://eslint.org/docs/rules/no-console">no-console</a></td>
+                      <td>3</td>
+                    </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
 
       <h2>File Breakdown
           <a id="toggle" href="javascript:;" onclick="toggleAllDetails(this)" class="toggle-all-link">(expand all)</a></h2>
@@ -300,141 +321,173 @@
             <th class="warning-col">Warnings</th>
           </tr>
         </thead>
-        <tbody><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/gulpfile.js</td>
+        <tbody><tr class="warning"><td>            <a class="toggle-link" href="javascript:;" onclick="toggleDetails(this)">/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/getConstraints/getConstraints.js</a></td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/index.js</td>
+              <td>1</td></tr><tr class="details-row hidden">
+                <td colspan="3">
+                  <table class="details-table">
+                    <tbody><tr class="msg-warning"><td class="location-col">
+                              18:25
+                          </td>
+                          <td class="severity-col">Warning</td>
+                          <td class="message-col">Unexpected console statement.</td>
+                            <td class="rule-col"><a href="http://eslint.org/docs/rules/no-console">no-console</a></td>
+      </tr></tbody>
+                  </table>
+                </td>
+              </tr><tr class="warning"><td>            <a class="toggle-link" href="javascript:;" onclick="toggleDetails(this)">/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/queryExecutorWithParams/queryExecutorWithParams.js</a></td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateNode/bulkMergeOrCreateNode.js</td>
+              <td>1</td></tr><tr class="details-row hidden">
+                <td colspan="3">
+                  <table class="details-table">
+                    <tbody><tr class="msg-warning"><td class="location-col">
+                              11:25
+                          </td>
+                          <td class="severity-col">Warning</td>
+                          <td class="message-col">Unexpected console statement.</td>
+                            <td class="rule-col"><a href="http://eslint.org/docs/rules/no-console">no-console</a></td>
+      </tr></tbody>
+                  </table>
+                </td>
+              </tr><tr class="warning"><td>            <a class="toggle-link" href="javascript:;" onclick="toggleDetails(this)">/data/workspace/simple-neo4j-wrapper/example/index.js</a></td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateNode/bulkMergeOrCreateNode.test.js</td>
+              <td>1</td></tr><tr class="details-row hidden">
+                <td colspan="3">
+                  <table class="details-table">
+                    <tbody><tr class="msg-warning"><td class="location-col">
+                              6:5
+                          </td>
+                          <td class="severity-col">Warning</td>
+                          <td class="message-col">Unexpected console statement.</td>
+                            <td class="rule-col"><a href="http://eslint.org/docs/rules/no-console">no-console</a></td>
+      </tr></tbody>
+                  </table>
+                </td>
+              </tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/gulpfile.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateNode/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateRelation/bulkMergeOrCreateRelation.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateNode/bulkMergeOrCreateNode.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateRelation/bulkMergeOrCreateRelation.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateNode/bulkMergeOrCreateNode.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateRelation/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateNode/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/bulkQueryExecutor/bulkQueryExecutor.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateRelation/bulkMergeOrCreateRelation.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/bulkQueryExecutor/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateRelation/bulkMergeOrCreateRelation.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/commons.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/bulkMergeOrCreateRelation/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/bulkQueryExecutor/bulkQueryExecutor.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/logger/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/bulkQueryExecutor/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/logger/logger.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/commons.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/prefixAndStringifyNodeProperties/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/prefixAndStringifyNodeProperties/prefixAndStringifyNodeProperties.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/logger/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/prefixAndStringifyRelationshipProperties/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/logger/logger.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/prefixAndStringifyRelationshipProperties/prefixAndStringifyRelationshipProperties.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/prefixAndStringifyNodeProperties/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/stringifyNodeProperties/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/prefixAndStringifyNodeProperties/prefixAndStringifyNodeProperties.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/stringifyNodeProperties/stringifyNodeProperties.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/prefixAndStringifyRelationshipProperties/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/stringifyRelationshipProperties/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/prefixAndStringifyRelationshipProperties/prefixAndStringifyRelationshipProperties.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/commons/stringifyRelationshipProperties/stringifyRelationshipProperties.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/stringifyNodeProperties/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNode/createNode.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/stringifyNodeProperties/stringifyNodeProperties.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNode/createNode.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/stringifyRelationshipProperties/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNode/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/commons/stringifyRelationshipProperties/stringifyRelationshipProperties.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromCsv/createNodesAndRelationsFromCsv.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createNode/createNode.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromCsv/createNodesAndRelationsFromCsv.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createNode/createNode.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromCsv/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createNode/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromTriple/createNodesAndRelationsFromTriple.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromCsv/createNodesAndRelationsFromCsv.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromTriple/createNodesAndRelationsFromTriple.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromCsv/createNodesAndRelationsFromCsv.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromTriple/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromCsv/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromTriples/createNodesAndRelationsFromTriples.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromTriple/createNodesAndRelationsFromTriple.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromTriples/createNodesAndRelationsFromTriples.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromTriple/createNodesAndRelationsFromTriple.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromTriples/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createNodesAndRelationsFromTriple/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createRelation/createRelation.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createRelation/createRelation.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createRelation/createRelation.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createRelation/createRelation.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createRelation/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createRelation/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createUniqueConstraintOnNode/createUniqueConstraintOnNode.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createUniqueConstraintOnNode/createUniqueConstraintOnNode.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/createUniqueConstraintOnNode/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/createUniqueConstraintOnNode/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/deleteAllNodes/deleteAllNodes.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/deleteAllNodes/deleteAllNodes.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/deleteAllNodes/deleteAllNodes.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/deleteAllNodes/deleteAllNodes.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/deleteAllNodes/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/deleteAllNodes/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/dropAllConstraints/dropAllConstraints.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/dropAllConstraints/dropAllConstraints.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/dropAllConstraints/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/dropAllConstraints/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/findNodes/findNodes.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/findNodes/findNodes.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/findNodes/findNodes.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/findNodes/findNodes.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/findNodes/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/findNodes/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/findOrCreateNode/findOrCreateNode.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/findOrCreateNode/findOrCreateNode.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/findOrCreateNode/findOrCreateNode.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/findOrCreateNode/findOrCreateNode.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/findOrCreateNode/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/findOrCreateNode/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/getConstraints/getConstraints.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/getConstraints/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/getConstraints/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/getCountOfAllNodes/getCountOfAllNodes.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/getCountOfAllNodes/getCountOfAllNodes.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/getCountOfAllNodes/getCountOfAllNodes.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/getCountOfAllNodes/getCountOfAllNodes.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/getCountOfAllNodes/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/getCountOfAllNodes/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/index.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/index.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateNode/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateNode/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateNode/mergeOrCreateNode.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateNode/mergeOrCreateNode.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateNode/mergeOrCreateNode.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateNode/mergeOrCreateNode.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateRelation/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateRelation/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateRelation/mergeOrCreateRelation.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateRelation/mergeOrCreateRelation.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateRelation/mergeOrCreateRelation.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/mergeOrCreateRelation/mergeOrCreateRelation.test.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/queryExecutor/index.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/queryExecutor/index.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/queryExecutor/queryExecutor.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/queryExecutor/queryExecutor.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/queryExecutor/queryExecutor.test.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/queryExecutor/queryExecutor.test.js</td>
-              <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/queryExecutorWithParams/index.js</td>
-              <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/nishant/workspace/ontology-manager-group/simple-neo4j-wrapper/neo4j-wrapper/queryExecutorWithParams/queryExecutorWithParams.js</td>
+              <td>0</td></tr><tr class="success"><td>/data/workspace/simple-neo4j-wrapper/neo4j-wrapper/queryExecutorWithParams/index.js</td>
               <td>0</td>
               <td>0</td></tr></tbody>
       </table>

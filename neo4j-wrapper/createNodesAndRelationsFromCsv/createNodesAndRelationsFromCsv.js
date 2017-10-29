@@ -1,4 +1,3 @@
-const path = require('path');
 const csv = require('fast-csv');
 const highland = require('highland');
 
@@ -9,7 +8,7 @@ const highland = require('highland');
  * @param {Function} cb - Refers to the callback.
  */
 const createFromCsv = (pathOfCsvFile, intent, cb) => {
-  const csvStream = csv.fromPath(path.join(__dirname, pathOfCsvFile), { headers: true });
+  const csvStream = csv.fromPath(pathOfCsvFile, { headers: true });
 
   highland(csvStream)
     .flatMap(intent)

@@ -1,6 +1,6 @@
 require('should');
+const path = require('path');
 const async = require('async');
-
 const Neo4jWrapper = require('../');
 const neo4j = new Neo4jWrapper('bolt://localhost', 'neo4j', 'password');
 
@@ -13,11 +13,11 @@ describe('Create Nodes and Relations from CSV', () => {
   });
 
   it('Should create nodes from the supplied csv file', (done) => {
-    neo4j.createNodesFromCsv('./conceptNodes.test.csv', done);
+    neo4j.createNodesFromCsv(path.join(__dirname, './conceptNodes.test.csv'), done);
   });
 
   it('should create relations from the supplied csv file', (done) => {
-    neo4j.createRelationsFromCsv('./conceptRelations.test.csv', done);
+    neo4j.createRelationsFromCsv(path.join(__dirname, './conceptRelations.test.csv'), done);
   });
 
   after((done) => {
