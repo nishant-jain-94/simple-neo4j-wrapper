@@ -33,7 +33,7 @@ class Neo4jWrapper {
       this.driver = Neo4jWrapper.drivers.get(this.host);
     } else {
       this.driver = neo4j.driver(this.host, neo4j.auth.basic(this.username, this.password));
-      Neo4jWrapper.drivers.set(this.host, this._driver);
+      Neo4jWrapper.drivers.set(this.host, this.driver);
     }
     return this.driver;
   }
